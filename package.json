@@ -1,0 +1,22 @@
+{
+  "name": "ebook-casadocodigo-mean",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanRussoDev/Ebook-CasaDoCodigo-MEAN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanRussoDev/Ebook-CasaDoCodigo-MEAN/issues"
+  },
+  "homepage": "https://github.com/AlanRussoDev/Ebook-CasaDoCodigo-MEAN#readme",
+  "dependencies": {
+    "express": "^4.8.8"
+  }
+}
