@@ -29,16 +29,16 @@ angular.module('contatooh').controller('ContatosController', function ($scope, $
 
    
    $scope.remove = function(contato){
-       var Contato = $resource('/contatos/:id');
-       Contato.delete({id : contato._id},
-        buscaContatos,
-        function(erro){
-            $scope.mensagem = {
+        var Contato = $resource('/contatos/:id');
+        Contato.delete({id : contato._id},
+            buscaContatos,
+            function(erro){
+                $scope.mensagem = {
                     texto : 'Não foi possivel remover o contato'
                 };
-            console.log(erro)
-        }
-       );
+                console.log(erro)
+            }
+        );
    }
 
     // $scope.total = 0;
