@@ -1,5 +1,6 @@
 angular.module('contatooh').controller('ContatoController', function ($scope,$routeParams,$resource) {
     var Contato = $resource('/contatos/:id');
+    var Contatos = $resource('/contatos');
 
     $scope.mensagem = {
         texto : ''
@@ -36,5 +37,9 @@ angular.module('contatooh').controller('ContatoController', function ($scope,$ro
                 };
             });
     }
+
+    Contatos.query(function(contatos){
+        $scope.contatos = contatos;
+    })
     
 });
